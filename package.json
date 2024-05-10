@@ -1,19 +1,19 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-kronoos",
   "version": "0.1.0",
-  "description": "",
+  "description": "n8n node to validate payloads",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://n8n.io",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Test",
+    "email": "test@example.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/Hochmah/Kronoos-n8n-Nodes.git"
   },
   "main": "index.js",
   "scripts": {
@@ -30,15 +30,14 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/KronoosApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/Kronoos/KronoosNode.node.js"
     ]
   },
   "devDependencies": {
+    "@types/request": "^2.48.12",
     "@typescript-eslint/parser": "~5.45",
     "eslint-plugin-n8n-nodes-base": "^1.11.0",
     "gulp": "^4.0.2",
@@ -48,5 +47,8 @@
   },
   "peerDependencies": {
     "n8n-workflow": "*"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
   }
 }
